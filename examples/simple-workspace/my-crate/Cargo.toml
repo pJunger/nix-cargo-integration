@@ -6,3 +6,6 @@ edition.workspace = true
 license.workspace = true
 repository.workspace = true
 homepage.workspace = true
+
+[dependencies]
+num_cpus = "1.0"  # has a dependency to libc

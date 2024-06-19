@@ -1,5 +1,5 @@
 [workspace]
-members = ["my-crate", "my-other-crate"]
+members = ["my-crate", "my-other-crate", "libc"]
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
@@ -7,3 +7,6 @@ authors = ["Some Author <someone@example.com>", "Another Author <someone.else@ex
 license = "MIT"
 repository = "https://github.com/yusdacra/nix-cargo-integration/tree/master/examples/simple-workspace"
 homepage = "https://github.com/yusdacra/nix-cargo-integration/tree/master/examples/simple-workspace"
+
+[patch.crates-io]
+libc = { path = "libc" }
